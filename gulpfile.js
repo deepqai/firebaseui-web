@@ -49,11 +49,11 @@ const DEFAULT_IMPORT_FIX = 'if(typeof firebase.default!==\'undefined\')' +
 
 // Adds the module requirement and exports firebaseui.
 const NPM_MODULE_WRAPPER = OPTIMIZATION_LEVEL === 'WHITESPACE_ONLY' ?
-    'var firebase=require(\'firebase/app\');require(\'firebase/auth\');' +
+    'var firebase=require(\'@deepqai/firebase/app\');require(\'@deepqai/firebase/auth\');' +
     DEFAULT_IMPORT_FIX + '%output%' + DIALOG_POLYFILL +
     'module.exports=firebaseui;' :
-    '(function() { var firebase=require(\'firebase/app\');' +
-    'require(\'firebase/auth\');' + DEFAULT_IMPORT_FIX + '%output% ' +
+    '(function() { var firebase=require(\'@deepqai/firebase/app\');' +
+    'require(\'@deepqai/firebase/auth\');' + DEFAULT_IMPORT_FIX + '%output% ' +
     DIALOG_POLYFILL + '})();' + 'module.exports=firebaseui;';
 
 // The path to Closure Compiler.
