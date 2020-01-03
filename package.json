@@ -1,6 +1,6 @@
 {
   "name": "@deepqai/firebaseui",
-  "version": "3.5.4",
+  "version": "3.5.5",
   "description": "Javascript library for customizable UI on top of Firebase SDK",
   "files": [
     "dist/firebaseui.js",
@@ -34,7 +34,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "closure-builder": "^2.3.2",
-    "firebase": "^5.0.0",
+    "firebase": "^7.6.7",
     "firebase-tools": "^4.0.1",
     "fs-extra": "^3.0.1",
     "google-closure-compiler": "^20181210.0.0",
@@ -57,6 +57,6 @@
     "dialog-polyfill": "^0.4.7"
   },
   "peerDependencies": {
-    "firebase": ">=5.0.0"
+    "firebase": ">=7.6.7"
   }
 }
